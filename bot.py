@@ -40,7 +40,7 @@ async def words(call: types.CallbackQuery):
         await asyncio.gather(start(chat_id, call.from_user.full_name))
 
     else:
-        await call.answer(text='Ти шо тут забув??', show_alert=True)
+        await call.answer(text='Заборонено', show_alert=True)
 
     await call.answer()
 
